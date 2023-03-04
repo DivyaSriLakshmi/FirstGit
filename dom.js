@@ -13,16 +13,27 @@
 //console.log(document.images);
 
 //GetElementById
-var headerTitle=document.getElementById('header-title');
-var header=document.getElementById('main-header');
+//var headerTitle=document.getElementById('header-title');
+//var header=document.getElementById('main-header');
 //console.log(headerTitle);
 //headerTitle.textContent='Hello';
 //headerTitle.innerText='GoodBye';
 //console.log(headerTitle.innerText);
 //headerTitle.innerHTML='<h3>Hello</h3>';
-header.style.borderBottom='solid 3px #000';
-let tit=document.getElementsByClassName('title');
-tit[0].style.fontWeight="bold";
-tit[0].style.color='green';
-//console.log(tit);
+//header.style.borderBottom='solid 3px #000';
+//let tit=document.getElementsByClassName('title');
+//tit[0].style.fontWeight="bold";
+//tit[0].style.color='green';
+let items=document.getElementsByClassName('list-group-item');
+//console.log(items);
+//console.log(items[1]);
+items[1].textContent='Hello 2';
+for(var i=0;i<items.length;i++){
+    items[i].style.fontWeight="bold";
+}
+//items[i].style.fontWeight='bold';
+items[2].style.backgroundColor='green';
+
+
+
 
