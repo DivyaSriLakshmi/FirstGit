@@ -70,11 +70,11 @@
 //('.list-group-item:last-child');
 //lastItem.style.color='blue';
 
-let thirdItem=document.querySelector('.list-group-item:nth-child(3)');
-thirdItem.style.display='none';
+//let thirdItem=document.querySelector('.list-group-item:nth-child(3)');
+//thirdItem.style.display='none';
 
-let secondItem=document.querySelector('.list-group-item:nth-child(2)');
-secondItem.style.backgroundColor='green';
+//let secondItem=document.querySelector('.list-group-item:nth-child(2)');
+//secondItem.style.backgroundColor='green';
 
 //QUERYSELECTORALL
 //var titles=document.querySelectorAll('.title');
@@ -89,5 +89,58 @@ secondItem.style.backgroundColor='green';
     //even[i].getElementsByClassName.backgroundColor='#ccc';
 //}
 
+//TRAVERSING THE DOM
 
+var itemList=document.querySelector('#items');
+//PARENT NODE
+//console.log(itemList.parentNode);
+itemList.parentNode.style.backgroundColor='#f4f4f4';
+console.log(itemList.parentNode.parentNode.parentNode);
 
+//childNodes
+//console.log(itemList.childNodes);
+
+//console.log(itemList.children);
+//console.log(itemList.children[1]);
+itemList.children[1].getElementsByClassName.backgroundColor='yellow';
+
+//FirstChild
+//console.log(itemList.firstChild);
+//FirstElementChild
+//console.log(itemList.firstElementChild);
+//itemList.firstElementChild.textContent='Hello 1';
+
+//nextSibling
+//console.log(itemList.nextSibling);
+//nextElementSibling
+console.log(itemList.nextElementSibling);
+
+//previousSibling
+//console.log(itemList.previousSibling);
+itemList.previousElementSibling.getElementsByClassName.color='green';
+
+//CreateElement
+
+//Create a div
+
+var newDiv=document.createElement('div');
+//Add Class
+newDiv.className='Hello';
+//Add Id
+newDiv.id='Hello 1';
+//Add Attribute
+newDiv.setAttribute('title','Hello Div');
+//Create a TextNode
+var newDivText=document.createTextNode('Hello World');
+//Add text to div
+newDiv.appendChild(newDivText);
+var container=document.querySelector('header .container');
+var h1=document.querySelector('header h1');
+console.log(newDiv);
+
+newDiv.style.fontSize='30px';
+
+container.insertBefore(newDiv,h1);
+
+let parentnode = document.getElementById('items');
+parentnode.innerHTML = '<li class="list-group-item">Hello World</li>' + parentnode.innerHTML
