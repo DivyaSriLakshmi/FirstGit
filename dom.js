@@ -44,12 +44,12 @@
    // li[i].style.backgroundColor='#f4f4f4';
 //}
 //li.document.createElement(li);
-let list = document.getElementById('items');
-let li =document.createElement('li');
-li.className = 'list-group-item';
+//let list = document.getElementById('items');
+//let li =document.createElement('li');
+//li.className = 'list-group-item';
 //li.document.createTextNode='Item 5';
-li. appendChild (document.createTextNode('Item 5'))
-list.appendChild(li);
+//li. appendChild (document.createTextNode('Item 5'))
+//list.appendChild(li);
 //console.log('li');
 
 //QUERYSELECTOR
@@ -57,8 +57,37 @@ list.appendChild(li);
 //var header=document.querySelector('#main-header');
 //header.style.borderBottom='solid 4px #ccc';
 
-//var input
+//var input=document.querySelector('input');
+//input.value='Hello World';
 
+//var submit=document.querySelector('input[type="submit"]');
+//submit.value="SEND";
+
+//var item=document.querySelector('.list-group-item');
+//item.style.color='red';
+
+//var lastItem=document.querySelector
+//('.list-group-item:last-child');
+//lastItem.style.color='blue';
+
+let thirdItem=document.querySelector('.list-group-item:nth-child(3)');
+thirdItem.style.display='none';
+
+let secondItem=document.querySelector('.list-group-item:nth-child(2)');
+secondItem.style.backgroundColor='green';
+
+//QUERYSELECTORALL
+//var titles=document.querySelectorAll('.title');
+//console.log(titles);
+//titles[0].textContent='Hello';
+
+//var odd=document.querySelectorAll('li:nth-child(odd)');
+//var even=document.querySelectorAll('li:nth-child(even)');
+
+//for(var i=0;i<odd.length;i++){
+    //odd[i].getElementsByClassName.backgroundColor='#f4f4f4';
+    //even[i].getElementsByClassName.backgroundColor='#ccc';
+//}
 
 
 
